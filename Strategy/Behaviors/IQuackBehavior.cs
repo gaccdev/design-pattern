@@ -1,5 +1,4 @@
-﻿using System;
-namespace DesignPattern
+﻿namespace Strategy
 {
     public interface IQuackBehavior
     {

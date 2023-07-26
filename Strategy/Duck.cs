@@ -1,4 +1,4 @@
-﻿namespace DesignPattern
+﻿namespace Strategy
 {
 	public abstract class Duck
 	{

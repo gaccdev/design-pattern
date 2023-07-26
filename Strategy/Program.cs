@@ -1,5 +1,5 @@
-﻿using DesignPattern;
-using DesignPattern.Behaviors;
+﻿using Strategy;
+using Strategy.Behaviors;
 
 var ducks = new List<Duck>
 {
