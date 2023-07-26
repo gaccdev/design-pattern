@@ -1,7 +1,21 @@
-﻿var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+﻿using DesignPattern;
+using DesignPattern.Behaviors;
 
-app.MapGet("/", () => "Hello World!");
+var ducks = new List<Duck>
+{
+    new MallardDuck(new FlyWithWings(), new Quack()),
+    new RubberDuck(new FlyNoWay(), new MuteQuack())
+};
 
-app.Run();
+foreach (var duck in ducks)
+{
+    duck.Display();
+    duck.Swin();
+    duck.PerformFly();
+    duck.PerformQuack();
+
+    Console.WriteLine();
+}
+
+Console.Read();
 
