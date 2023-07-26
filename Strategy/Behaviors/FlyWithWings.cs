@@ -1,4 +1,4 @@
-﻿namespace DesignPattern.Behaviors
+﻿namespace Strategy.Behaviors
 {
 	public class FlyWithWings: IFlyBehavior
 	{
